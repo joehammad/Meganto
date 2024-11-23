@@ -15,6 +15,6 @@ public class CreateAccount extends Utilities {
     public By CreateBtn = By.xpath ("(//*[text()='Create an Account'])[3]");
 
 public void Register(){
-FindElement(FirstName).sendKeys("youssef");
+//FindElement(FirstName).sendKeys("youssef");
 }
 }
