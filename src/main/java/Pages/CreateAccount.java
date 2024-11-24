@@ -13,8 +13,17 @@ public class CreateAccount extends Utilities {
     public By Password = By.id ("password");
     public By ConfirmPass = By.id ("password-confirmation");
     public By CreateBtn = By.xpath ("(//*[text()='Create an Account'])[3]");
+    public By Home = By.cssSelector("a[class=\"logo\"]");
 
 public void Register(){
-FindElement(FirstName).sendKeys("youssef");
+
+    FindElement(FirstName).sendKeys("youssef");
+    FindElement(LastName).sendKeys("hammad");
+    FindElement(Email).sendKeys("test@test1234574.com");
+    FindElement(Password).sendKeys("Test@12345");
+    FindElement(ConfirmPass).sendKeys("Test@12345");
+    FindElement(CreateBtn).click();
+    FindElement(Home).click();
+
 }
 }

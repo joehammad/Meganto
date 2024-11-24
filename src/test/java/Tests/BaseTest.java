@@ -1,5 +1,6 @@
 package Tests;
 
+import Pages.Compare;
 import Pages.CreateAccount;
 import Pages.HomePage;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +12,16 @@ public class BaseTest {
 
 public WebDriver driver = new ChromeDriver();
     @Test
-    public void megantoTest(){
+    public void megantoTest() throws InterruptedException {
      HomePage homePage = new HomePage(driver);
      CreateAccount createAccount = new CreateAccount(driver);
+     Compare compare = new Compare(driver);
+
+
+
      homePage.ClickOnCreate();
      createAccount.Register();
-
+     compare.CompareProducts();
 
 
     }
