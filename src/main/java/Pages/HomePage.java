@@ -14,7 +14,7 @@ public class HomePage extends Utilities {
     public void ClickOnCreate() {
 
         driver.get("https://magento.softwaretestingboard.com/");
-        clickOnElement(createAccount);
+        clickOnElement(createAccount); // Use a reusable method from Utilities
 
     }
 
