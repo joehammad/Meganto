@@ -17,8 +17,6 @@ public WebDriver driver = new ChromeDriver();
      CreateAccount createAccount = new CreateAccount(driver);
      Compare compare = new Compare(driver);
 
-
-
      homePage.ClickOnCreate();
      createAccount.Register();
      compare.CompareProducts();

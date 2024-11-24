@@ -11,7 +11,7 @@ public class Compare extends Utilities {
     public Compare(WebDriver driver) {
         super(driver);}
 
-    public By FirstProduct = By.partialLinkText("adiant Tee");
+    public By FirstProduct = By.partialLinkText("Radiant Tee");
     public By SecondProduct = By.partialLinkText("Breathe-Easy Tank");
     public By CompareBtn = By.cssSelector("a[class='action tocompare']");
     public By AddToCompare = By.partialLinkText("ADD TO COMPARE");
